@@ -32,11 +32,11 @@ export default function Home({ data }) {
 
 // get movie data with prisma
 export async function getServerSideProps() {
-  const movies = await prisma.movie.findMany();
+  const posts = await prisma.user.findMany();
 
   return {
     props: {
-      data: movies,
+      data: posts,
     },
   };
 }
