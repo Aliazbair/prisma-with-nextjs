@@ -15,6 +15,7 @@ export default function Home({ data }) {
       </Head>
 
       <main className={styles.main}>
+        <h2>next</h2>
         <ul>
           {data.map((item) => (
             <li key={item.id}>
